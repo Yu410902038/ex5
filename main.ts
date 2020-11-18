@@ -1,9 +1,12 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showString("A win!")
+    radio.sendString("A win!")
+    music.playMelody("- - C D - - - - ", 120)
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showString("B win!")
+    radio.sendString("B win!")
+    music.playMelody("- - A - - F - - ", 120)
 })
+radio.setGroup(39)
 basic.forever(function () {
 	
 })
